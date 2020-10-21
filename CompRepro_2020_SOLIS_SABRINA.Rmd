@@ -1,0 +1,41 @@
+---
+title: "Computational Reproducibility"
+author: "Fred LaPolla"
+date: "10/14/2020"
+output: html_document
+---
+
+```{r setup, include=TRUE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown file
+
+This file, an R Markdown lets you combine plain text, in the white spaces, and code chunks, in the gray. The text is not really code, but can be used to communicate, while the code chunks let you combine the actual analysis you are running alongside the results. This means someone can see exactly what you did to get your results.
+
+To add a chunk either click on the green Insert button and choose R or hit Command + Option + i (Mac) or Ctrl + Alt + i (PC)
+
+```{r}
+3+3
+```
+
+## Homework
+
+1) Create an R Project to pull this file from GitHub. 
+
+2) Please describe one of the ways that Wilson et. al. suggest is a good practice for computational reproducibility and how a tool like R can be used. Write your answer below.
+
+One of the ways that Wilson et. al. suggests as a good practice for computational reproducibility is for researchers to keep track of all changes made to the data and software they are using. To do this, the authors suggest using a tool for tracking all changes in data like Git. This can allow anyone on the project to track and see changes made by anyone else on the project since the changes are uploaded to a central server. R can be linked to Git in order to track the changes being made to the program. With programs like Git, researchers can go to any point in the editing history to help locate points of interest with reviewer comments or if another lab wants to know what steps were taken throughout the research process. In order to effectively track the changes made in data, a few guidelines are listed to help with this process such as: backing up all files, making only small changes, sharing changes frequently, using a checklist, and using an outside “cloud” folder that saves changes daily. Adopting these practices to data research can help with reproducibility across the scientific community.
+
+3) Add a code chunk and find the square root of 4 to the 13th power. If you are unsure of what command to use, google it. 
+
+```{r}
+sqrt(4)^13
+```
+
+4) Push this homework to the GitHub repository for the homework. 
+
+
+
+
+
